@@ -16,6 +16,6 @@ Specialized framework designed for binary classification tasks, focusing exclusi
 - **Model Training with Stepwise Stacking**  
   The core idea is to build an ensemble through a stepwise stacking algorithm:
   - Different subsets of features (e.g., top-25, top-50, top-75 most important features) are used for training.
-  - atBoost, XGBoost, Random Forest, and Logistic Regression are trained on these selected feature subsets.
+  - CatBoost, XGBoost, Random Forest, and Logistic Regression are trained on these selected feature subsets.
   - First, a base model is trained and its predictions are computed using cross-validation. Then, additional models are iteratively added or removed—while optimizing their weights in the ensemble—mimicking the approach of stepwise regression. This process continues until the optimal combination of models is achieved.
 
